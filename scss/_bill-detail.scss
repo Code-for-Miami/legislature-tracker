@@ -30,12 +30,7 @@
 
 .bill-status-indicators img {
 	max-height: 2em;
-	margin-left: .5em;
-	opacity: .25;
-	filter: alpha(opacity = 25);
-}
-.bill-status-indicators img.passed {
-	@extend %opaque;
+	margin: 0 .5em;
 }
 
 // Latest Action
@@ -134,6 +129,11 @@
 	li {
 		@include rem(margin-bottom, $unit-half);
 	}
+}
+
+.indicator {
+	@extend %flag;
+	@include rem(margin-right, $unit-half);
 }
 
 .bill-action-date {
