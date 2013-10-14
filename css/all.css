@@ -521,12 +521,7 @@ table {
     margin-bottom: 0.5rem; }
 
 .indicator {
-  margin-left: 0.5rem;
-  display: inline-block; }
-
-.bill-passed {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1; }
+  margin-right: 0.5rem; }
 
 .bill-action-date {
   margin-right: 1rem;
