@@ -543,7 +543,7 @@ table {
 @media screen and (min-width: 1024px) {
   .bill-summary {
     float: left;
-    width: 70%; }
+    width: 60%; }
 
   .bill-status {
     text-align: right;
