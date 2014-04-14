@@ -25,13 +25,13 @@
 	<div class="application-container">
 
 		<h1>FL Legislation Tracker</h1>
-		
+
 		<section id="legislature-tracker-container">
 		</section>
 
 	</div>
-				
-		
+
+
 	<!-- Application libraries and JS -->
 	<script type="text/javascript" src="dist/js/legislature-tracker.libs.js"></script>
 	<script type="text/javascript" src="dist/js/legislature-tracker.latest.min.js"></script>
@@ -42,16 +42,17 @@
 		(function($, w, undefined) {
 			var options = _(LT.defaultOptions).extend({
 				el: '#legislature-tracker-container',
-				state: 'FL', 
+				state: 'FL',
 				session: '2014',
 				OSKey: '1a9d7ed2b24348a7be264c5c3dad1bbe',
-				eKey: '0AqzrZCDlzfg9dHpRYkZCRUxyYmZEYk5NaXNrM09FdVE',
-				imagePath: 'images/'
+				eKey: '0AqzrZCDlzfg9dE1yUk41VlN5NHVmSEJxZkk3S2ZKQ2c',
+				imagePath: 'images/',
+				maxBills: 50
 			});
 			options['wordTranslations']['chamber']['lower'] = 'House';
 
 			var app = new LT.Application(options);
-			
+
 		})(jQuery, window);
 	</script>
 
