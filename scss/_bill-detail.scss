@@ -3,6 +3,7 @@
 .bills-list .bill {
 	@include rem(padding, $unit-whole);
 	@extend %standard-border;
+	border-top-width: 8px;
 	margin-bottom: 1em;
 }
 
