@@ -188,8 +188,8 @@ table {
   border-spacing: 0; }
 
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 div,
@@ -261,18 +261,19 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h1,
 h1 a {
   font-family: adelle, "Helvetica Neue", Arial, sans-serif;
-  font-size: 48px;
-  font-size: 3rem; }
-
-h2,
-h2 a {
   font-size: 32px;
   font-size: 2rem; }
 
-h3,
-h3 a {
+h2,
+h2 a {
   font-size: 24px;
   font-size: 1.5rem; }
+
+h3,
+h3 a {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25; }
 
 h4,
 h4 a {
@@ -319,6 +320,22 @@ body {
   font-size: 14px;
   font-size: 0.875rem; }
 
+h1,
+h1 a {
+  font-family: adelle, "Helvetica Neue", Arial, sans-serif;
+  font-size: 48px;
+  font-size: 3rem; }
+
+h2,
+h2 a {
+  font-size: 32px;
+  font-size: 2rem; }
+
+h3,
+h3 a {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
 .loading-general {
   width: 100%;
   text-align: center;
@@ -362,18 +379,9 @@ body {
   .category-list li {
     margin-bottom: 16px;
     margin-bottom: 1rem; }
-  .category-list a {
-    display: block; }
-  .category-list .category-image {
-    display: block;
-    margin: 0 auto;
-    zoom: 1;
-    display: block; }
-
-@media screen and (min-width: 600px) {
   .category-list li {
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
     width: 48%;
@@ -386,11 +394,19 @@ body {
     .category-list li:nth-child(2n+3) {
       clear: both; }
     .category-list li:nth-child(2n+3) {
-      clear: both; } }
+      clear: both; }
+  .category-list a {
+    display: block; }
+  .category-list .category-image {
+    display: block;
+    margin: 0 auto;
+    zoom: 1;
+    display: block; }
+
 @media screen and (min-width: 767px) {
   .category-list li {
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
     width: 31.33333%;
@@ -404,8 +420,8 @@ body {
       clear: none; } }
 @media screen and (min-width: 1024px) {
   .category-list li {
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
     width: 23%;
@@ -440,6 +456,9 @@ body {
   margin-right: 1rem;
   max-width: 50px; }
 
+@media screen and (max-width: 766px) {
+  .nav-categories span {
+    display: none; } }
 @media screen and (min-width: 767px) {
   .category-container {
     float: right;

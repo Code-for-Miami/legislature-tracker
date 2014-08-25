@@ -181,8 +181,8 @@ table {
   border-spacing: 0; }
 
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 div:before, div:after,
@@ -247,15 +247,16 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h1,
 h1 a {
   font-family: adelle, "Helvetica Neue", Arial, sans-serif;
-  font-size: 3rem; }
+  font-size: 2rem; }
 
 h2,
 h2 a {
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 h3,
 h3 a {
-  font-size: 1.5rem; }
+  font-size: 1rem;
+  line-height: 1.25; }
 
 h4,
 h4 a {
@@ -305,17 +306,28 @@ table {
 
 .indicator, .bill-action-date, .bill-votes span {
   padding: 0.25rem 0.5rem;
-  -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
   background: #00d4da;
   color: #f8f8f8; }
 
 @media screen and (min-width: 767px) {
   body {
-    font-size: 0.875rem; } }
+    font-size: 0.875rem; }
+
+  h1,
+  h1 a {
+    font-family: adelle, "Helvetica Neue", Arial, sans-serif;
+    font-size: 3rem; }
+
+  h2,
+  h2 a {
+    font-size: 2rem; }
+
+  h3,
+  h3 a {
+    font-size: 1.5rem; } }
 .loading-general {
   width: 100%;
   text-align: center;
@@ -355,16 +367,9 @@ table {
   margin-left: -2%; }
   .category-list li {
     margin-bottom: 1rem; }
-  .category-list a {
-    display: block; }
-  .category-list .category-image {
-    display: block;
-    margin: 0 auto; }
-
-@media screen and (min-width: 600px) {
   .category-list li {
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
     width: 48%;
@@ -377,11 +382,17 @@ table {
     .category-list li:nth-child(2n+3) {
       clear: both; }
     .category-list li:nth-child(2n+3) {
-      clear: both; } }
+      clear: both; }
+  .category-list a {
+    display: block; }
+  .category-list .category-image {
+    display: block;
+    margin: 0 auto; }
+
 @media screen and (min-width: 767px) {
   .category-list li {
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
     width: 31.33333%;
@@ -395,8 +406,8 @@ table {
       clear: none; } }
 @media screen and (min-width: 1024px) {
   .category-list li {
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
     width: 23%;
@@ -428,6 +439,9 @@ table {
   margin-right: 1rem;
   max-width: 50px; }
 
+@media screen and (max-width: 766px) {
+  .nav-categories span {
+    display: none; } }
 @media screen and (min-width: 767px) {
   .category-container {
     float: right;
@@ -444,6 +458,7 @@ table {
     width: 18%; } }
 .bills-list .bill {
   padding: 1rem;
+  border-top-width: 8px;
   margin-bottom: 1em; }
 
 .bill-summary h2, .bill-summary h3 {
@@ -492,33 +507,38 @@ table {
 
 .bill-bottom {
   padding-top: 0.5rem;
+  padding-top: 0;
   border-top: 1px solid #00d4da; }
+
+.osbill h4 {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  background-color: #00d4da;
+  color: #f8f8f8; }
+
+.legislator img {
+  margin-top: 1em; }
 
 .bill-news-links {
   margin-bottom: 1rem;
   padding: 1rem;
   background: #444444;
-  color: white; }
+  color: #f8f8f8; }
   .bill-news-links ul {
     list-style: none; }
   .bill-news-links a {
     word-break: break-all; }
 
-.bill-actions {
-  float: left;
-  width: 68%; }
-  .bill-actions ul {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    height: 100px;
-    overflow-y: scroll;
-    border: 1px solid #eeeeee;
-    padding: 1rem; }
-  .bill-actions li {
-    margin-bottom: 0.5rem; }
+.bill-actions ul {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 200px;
+  overflow-y: scroll;
+  border: 1px solid #eeeeee;
+  padding: 1rem; }
+.bill-actions li {
+  margin-bottom: 0.5rem; }
 
 .indicator {
   margin-right: 0.5rem; }
@@ -529,9 +549,7 @@ table {
 
 .bill-auxiliary {
   background: #dafeff;
-  padding: 1rem;
-  float: right;
-  width: 28%; }
+  padding: 1rem; }
 
 .bill-votes ul {
   margin-bottom: 0.5rem;
@@ -540,11 +558,23 @@ table {
 .bill-votes li {
   margin-bottom: 0.5rem; }
 
+@media screen and (min-width: 767px) {
+  .bill-sponsors {
+    float: left;
+    width: 28%; }
+
+  .bill-actions {
+    float: right;
+    width: 68%; }
+
+  .bill-auxiliary {
+    clear: both; } }
 @media screen and (min-width: 1024px) {
   .bill-summary {
     float: left;
     width: 60%; }
 
   .bill-status {
-    text-align: right;
-    float: right; } }
+    float: right;
+    margin-top: 0;
+    text-align: right; } }
