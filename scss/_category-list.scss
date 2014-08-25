@@ -28,6 +28,16 @@
 	li {
 		@include rem(margin-bottom, $unit-whole);
 	}
+	li {
+		@include column-span(2);
+		display: block;
+		float: left;
+		list-style: none;
+		text-align: center;
+		&:nth-child(2n+3) {
+			clear: both;
+		}
+	}
 
 	a {
 		display: block;
@@ -37,7 +47,7 @@
 		display: block;
 		margin: 0 auto;
 		@extend %transparent;
-		
+
 		@include old-ie {
 			zoom: 1;
 			display: block;
@@ -49,22 +59,24 @@
 
 }
 
-@media screen and (min-width: 600px) {
-
-	.category-list {
-		li {
-			@include column-span(2);
-			display: block;
-			float: left;
-			list-style: none;
-			text-align: center;
-			&:nth-child(2n+3) {
-				clear: both;
-			}
-		}
-	}
-
-}
+// @media screen and (min-width: 600px) {
+//
+// 	.category-list {
+// 		margin-left: -$grid-margin;
+//
+// 		li {
+// 			@include column-span(2);
+// 			display: block;
+// 			float: left;
+// 			list-style: none;
+// 			text-align: center;
+// 			&:nth-child(2n+3) {
+// 				clear: both;
+// 			}
+// 		}
+// 	}
+//
+// }
 
 @media screen and (min-width: 767px) {
 
