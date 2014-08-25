@@ -144,6 +144,7 @@
 .indicator {
 	@extend %flag;
 	@include rem(margin-right, $unit-half);
+	display: inline-block;
 }
 
 .bill-action-date {
