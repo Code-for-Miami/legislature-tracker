@@ -28,6 +28,16 @@
 }
 
 
+@media screen and (max-width: 766px) {
+
+	.nav-categories {
+		span {
+			display: none;
+		}
+	}
+
+}
+
 @media screen and (min-width: 767px) {
 
 	.category-container {
