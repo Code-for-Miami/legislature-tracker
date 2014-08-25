@@ -92,8 +92,20 @@
 
 .bill-bottom {
 	@include rem(padding-top, $unit-half);
+	padding-top: 0;
 	@extend %margin-top;
 	border-top: $border-width $border-style $primary-color;
+}
+
+.osbill h4 {
+	margin-bottom: 1em;
+	padding: 0.5em;
+	background-color: $primary-color;
+	color: $white;
+}
+
+.legislator img {
+	margin-top: 1em;
 }
 
 // News Links
@@ -102,7 +114,7 @@
 	@include rem(margin-bottom, $unit-whole);
 	@include rem(padding, $unit-whole);
 	background: $secondary-color;
-	color: white;
+	color: $white;
 
 	ul {
 		list-style: none;
@@ -115,13 +127,10 @@
 // Actions
 
 .bill-actions {
-	float: left;
-	width: 68%;
-
 	ul {
 		@include border-radius;
 		@extend %list-unstyled;
-		height: 100px;
+		height: 200px;
 		overflow-y: scroll;
 		border: $border-width $border-style $border-color;
 		padding: 1rem;
@@ -145,8 +154,6 @@
 .bill-auxiliary {
 	background: lighten($primary-color, 50);
 	@include rem(padding, $unit-whole);
-	float: right;
-	width: 28%;
 	//background: lighten($primary-color, 50);
 }
 
@@ -165,6 +172,20 @@
 	}
 }
 
+@media screen and (min-width: 767px) {
+	.bill-sponsors {
+		float: left;
+		width: 28%;
+	}
+	.bill-actions {
+		float: right;
+		width: 68%;
+	}
+	.bill-auxiliary {
+		clear: both;
+	}
+}
+
 @media screen and (min-width: 1024px) {
 
 	.bill-summary {
@@ -173,8 +194,9 @@
 	}
 
 	.bill-status {
-		text-align: right;
 		float: right;
+		margin-top: 0;
+		text-align: right;
 	}
 
 }
