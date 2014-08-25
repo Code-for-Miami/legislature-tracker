@@ -77,18 +77,19 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a  {
 	text-rendering: optimizelegibility;
 }
 
-h1, 
+h1,
 h1 a {
 	font-family: $font-fancy;
-	@include rem(font-size, 48px);
-}
-h2, 
-h2 a {
 	@include rem(font-size, 32px);
 }
-h3, 
-h3 a {
+h2,
+h2 a {
 	@include rem(font-size, 24px);
+}
+h3,
+h3 a {
+	@include rem(font-size, 16px);
+	line-height: 1.25;
 }
 h4, 
 h4 a {
@@ -222,5 +223,18 @@ table {
 @include respond-min(767px) {
 	body {
 		@include rem(font-size, 14px);
+	}
+	h1,
+	h1 a {
+		font-family: $font-fancy;
+		@include rem(font-size, 48px);
+	}
+	h2,
+	h2 a {
+		@include rem(font-size, 32px);
+	}
+	h3,
+	h3 a {
+		@include rem(font-size, 24px);
 	}
 }
