@@ -1,4 +1,4 @@
-# Legislature Tracker
+# Legislature Tracker 
 
 An application to keep track of what is going on in a state legislature.  Using editorial expertise and the Sunlight Lab's Open States API, this application creates a curated view of what is going on in a state's legislature session.
 
